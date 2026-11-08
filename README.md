@@ -1,46 +1,54 @@
-# Arduino PIR Motion Detection System
+# Arduino-Based Motion Detection
 
-A Digital Logic Design (CEN2011T) final project dated 14 December 2025. Although the source filename contains “lab”, its cover explicitly labels it **Final project**. It is the course-end hardware project.
+A Digital Logic Design (CEN2011T) final project demonstrating motion detection and automatic LED control using an Arduino Uno R3 and a passive infrared (PIR) sensor. The circuit is simulated in Tinkercad.
 
-## Repository status
+## Interactive circuit
 
-This repository currently publishes the project overview. The supporting files described below are prepared locally but have not yet been uploaded to GitHub. File paths describe that prepared package; they are not download links.
+**[Open the circuit and simulation in Tinkercad](https://www.tinkercad.com/things/3JmI1qsUgJa-arduino-based-motion-detection)**
 
-## Prepared project material
+Open the Tinkercad design to inspect the circuit connections, view the control logic, and run the simulation.
 
-Project report and component illustrations — `docs/project-report.md`
+## Project overview
 
-The report describes an Arduino board, PIR motion sensor, LED, resistor and breadboard. A HIGH sensor signal turns the LED on; a LOW signal turns it off. It discusses component functions, operating environment, applications and future improvements.
+Developed as a university team project with five members, dated 14 December 2025. The system reads the PIR sensor signal and switches an LED on when movement is detected and off otherwise.
 
-## Components and signal flow
+The project connects input/output control, conditional logic, and sensor integration with a practical circuit simulation.
 
-| Component | Function |
+## Components
+
+| Component | Purpose |
 | --- | --- |
-| PIR sensor | Detects changes in infrared radiation associated with movement |
-| Arduino board | Reads the sensor's digital output and controls the indicator |
-| LED | Provides a visible motion indication |
+| Arduino Uno R3 | Reads the sensor input and controls the LED |
+| PIR motion sensor | Detects infrared changes associated with movement |
+| LED | Indicates detected motion |
 | Resistor | Limits current through the LED |
-| Breadboard | Holds prototype connections |
+| Breadboard and jumper wires | Connect the circuit components |
 
-Signal flow: movement → PIR sensor → digital HIGH/LOW input → Arduino decision → LED output. A PIR sensor senses infrared changes; it does not identify a person or record images.
+## How it works
 
-## Digital logic demonstrated
+1. The PIR sensor detects movement.
+2. The Arduino reads the sensor signal.
+3. Conditional control logic switches the LED on or off.
+4. The LED provides a visible indication of the motion state.
 
-| Sensor output | Meaning in the report | LED output |
-| --- | --- | --- |
-| LOW | No motion detected | Off |
-| HIGH | Motion detected | On |
+| Motion state | LED state |
+| --- | --- |
+| Motion detected | On |
+| No motion detected | Off |
 
-This project applies binary input/output, conditional control and hardware integration. The report discusses operating conditions, possible applications and future improvements. Exact wiring pins and an executable sketch are not available in the located submission.
+## Tools and concepts
 
-## Team
+- Tinkercad Circuits and block-based control logic
+- Arduino Uno R3
+- Sensor input and LED output
+- Conditional statements and continuous monitoring
+- Circuit prototyping and digital logic
 
-Team size: 5 members.
+## Project materials
 
-## Available material and limits
+- **Circuit and simulation:** [Tinkercad design](https://www.tinkercad.com/things/3JmI1qsUgJa-arduino-based-motion-detection)
+- **Project overview:** this README
 
-This is a documentation portfolio entry. No original Arduino sketch, circuit schematic or final demonstration video was located with the report. The included images are component illustrations extracted from the submission, not photographs proving the circuit build. No code, pin assignments or hardware results have been invented. Hardware operation has not been independently tested.
+## Credits and license
 
-## Publication
-
-Academic portfolio documentation. No license has been selected.
+This is a team academic project and a remix of an existing Tinkercad circuit. Refer to the Tinkercad design for its remix attribution and circuit license. No separate license has been assigned to this repository.
