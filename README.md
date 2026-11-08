@@ -35,7 +35,7 @@ This project applies binary input/output, conditional control and hardware integ
 
 ## Team
 
-Group 1: تركي السفياني، بسام الدوسري، عبدالرحمن الحازمي، عبدالله حسين، فيصل الصبحي. Individual implementation roles are not specified in the report.
+Team size: 5 members.
 
 ## Available material and limits
 
@@ -43,4 +43,4 @@ This is a documentation portfolio entry. No original Arduino sketch, circuit sch
 
 ## Publication
 
-Academic portfolio documentation. Team credits are retained. No license has been selected.
+Academic portfolio documentation. No license has been selected.
